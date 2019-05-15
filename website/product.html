@@ -1,0 +1,76 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style5.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="row">
+        <div class="logo">
+        <img src="logo.png">
+        </div>
+            
+    <ul class="main-nav">    
+        <li class="active"><a href="home.html"> HOME </a></li>
+        <li><a href=""> PRODUCT </a></li>
+        <li><a href="about.html"> ABOUT </a></li>
+        <li><a href="contact.html"> CONTACT </a></li>
+        <li><a href="login.html"> MEMBER LOGIN</a></li>
+        
+    </ul>    
+        
+    </div>
+	<div class="overlay" id="overlay">
+	<div class="next" id="next">
+		<img src="next.png">
+	</div>
+	<div class="before" id="before">
+		<img src="prev.png">
+	</div>
+	<div class="img-wrap">
+		<img src="ad1.jpg" width="100%" id="overlay-img">
+	</div>
+	<div class="close" onclick="imgDisappear()">
+		<img src="close.png">
+	</div>
+	</div>
+
+
+<div class="gallery" style="clear: both;">
+	<img src="ad1.jpg" onclick="imgAppear(0)">
+	<img src="ad2.jpg" onclick="imgAppear(1)">
+	<img src="ad3.jpg" onclick="imgAppear(2)">
+	<img src="ad4.jpg" onclick="imgAppear(3)">
+	<img src="ad5.jpg" onclick="imgAppear(4)">
+	
+</div>
+<script type="text/javascript">
+	var pic=["ad1.jpg","ad2.jpg","ad3.jpg","ad4.jpg","ad5.jpg"];
+
+	function imgAppear(i){
+		var imgNo=i;
+		document.getElementById("overlay").classList.add("appear");
+		document.getElementById("overlay-img").src=pic[imgNo];
+		document.getElementById("next").onclick=function(){
+			imgNo++;
+			if(imgNo>4){imgNo=0;}
+			this.src=pic[imgNo];
+			document.getElementById("overlay-img").src=pic[imgNo];
+		}
+		document.getElementById("before").onclick=function(){
+			imgNo--;
+			if(imgNo<0){imgNo=6;}
+			this.src=pic[imgNo];
+			document.getElementById("overlay-img").src=pic[imgNo];
+		}
+	}
+
+	function imgDisappear(){
+		document.getElementById("overlay").classList.remove("appear");
+	}
+</script>
+	
+
+
+</body>
+</html>
