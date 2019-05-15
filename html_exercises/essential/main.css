@@ -1,0 +1,87 @@
+body{
+ 
+    font-family: Arial;
+    
+}
+
+#unorderedlist li{
+    
+     display: inline;
+   
+}
+
+img{
+    margin-right: 180%;
+    border: 1px solid black;
+    height: 130px;
+    width: 130px;
+ float: right;
+}
+
+hr{
+   
+ border: 3px solid rgb(128, 128, 128);
+}
+
+#uldiv{
+  border-radius: 10px;
+background: #90caf9;
+padding: 10px;
+}
+
+#unorderedlist{
+   margin-right: 14%; 
+    text-align: center;
+}
+
+a {
+    color:#fff ;
+}
+
+a:hover{
+    color: #000;
+}
+
+#unorderedlist1{
+    line-height: 30px;
+    margin-bottom: 3%;
+  
+}
+
+#studentdiv{
+
+  
+     background-color: #eee;
+ 
+}
+
+#leftside{
+     margin-bottom: 3%;
+
+ line-height: 30px;
+
+}
+
+#wholediv{
+   padding: 30px;
+   border-radius: 18px;
+  width: 70%;
+  margin-left: 12%;
+    background-color: #eee;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    
+}
+
+#awardslist{
+    
+line-height: 30px;
+    list-style-type: square;
+  
+}
+
+#tranings{
+line-height: 30px;
+ list-style-type: square;
+padding-bottom: 2%;
+}
